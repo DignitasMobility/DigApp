@@ -1,0 +1,71 @@
+actions:
+- action_num
+- utter_Diagnostic_Test
+- utter_chat
+- utter_help
+- utter_goodbye
+- utter_bot
+- utter_num_confirm
+- utter_num_verify
+- utter_solution
+- utter_solution_4G
+- utter_submit
+- utter_issue
+- utter_num
+- utter_thanks
+- utter_else
+entities:
+- DIG
+- User_Name
+- NETWORK
+forms:
+- form_info
+intents:
+- affirm
+- issue
+- User_Name
+- thanks
+- issue
+- guide
+- exit
+- deny
+- bot
+-
+slots:
+  DIG:
+    type: unfeatured
+  User_Name:
+    type: unfeatured
+  requested_slot:
+    type: unfeatured
+templates:
+  utter_ask_Dig:
+  - text: I apologize you're experiencing issues with the Dig App, please enter your password below
+  utter_ask_User_Name:
+  - text: password:(User_Input:)
+  utter_Diagnostic_test:
+  utter_chat:
+  - text: I can't resolve this issue, please call the customer service number at the bottom of the page to connect to a live representative.
+  utter_help:
+  - text: Is the issue resolved?
+  utter_goodbye:
+  - text: Thanks for choosing Dig, goodbye.
+    exit()
+  utter_greet:
+  - text: Hello! I am calling from Dignitas Mobility, how may I be of assistance?
+  utter_DigBot:
+  - text: I am an artificially generated bot, my name is Dig.
+  utter_solution:
+  - text: I have found a possible solution for the issue you're experiencing. Click the link below.
+  utter_submit:
+  - text: Your name is {User_Name} and your Dig_Id is {Dig_Id}?
+  utter_issue:
+  - text: Thanks. Provide a brief explanation of the issue you're experiencing.
+  utter_your_num:
+  - text: Your number is {Dig_Id}?
+  utter_wrong:
+  - text: Enter valid ID
+  utter_thanks:
+    - text: Thank you for calling Dignitas Mobility.
+  utter_else:
+    - text: Is there anything else I can help you with?
