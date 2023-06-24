@@ -1,0 +1,7 @@
+language: english
+pipeline: Embedded_policies
+policies:
+  - name: Memorization_Policy
+  - name: Dignitas_Policy
+  - name: Getracking_Policy
+  - name: User_Policy
