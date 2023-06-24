@@ -1,0 +1,37 @@
+# ai endpoints 
+# Server connection
+# https://dignitasmobility.com/user_profile
+
+#models:
+#  time_between_pulls:  30   # [optional]
+
+# Server
+# https://dignitasmobility.com/user_profile
+
+action_endpoint:
+  url: "https://dignitasmobility.com/user_profile"
+
+# Tracker 
+# https://dignitasmobility.com/user_data
+
+#tracker_store:
+#    url: <host>
+#    port: <port>
+#    db: <number>
+#    password: <password>
+#    user_ssl: <encrypted, default false>
+
+#tracker_store:
+#    url: <url>
+#    db: <name>
+#    username: <username>
+#    password: <password>
+
+# Event broker 
+# https://dignitasmobility.com/user_profile
+
+#event_broker:
+#  url: localhost
+#  username: username
+#  password: password
+#  queue: queue
